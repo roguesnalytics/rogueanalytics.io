@@ -1375,7 +1375,7 @@
       </div>
 
       <div>
-        <div class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/meednpog" method="POST">
           <h3>Send us a message</h3>
           <p class="form-desc">Tell us a bit about your business and what you're dealing with.</p>
           <div class="form-row">
@@ -1413,9 +1413,9 @@
             <label for="message">Anything else you want us to know?</label>
             <textarea id="message" placeholder="The more context the better — what's frustrating you, what you've already tried, what would success look like..."></textarea>
           </div>
-          <button class="form-submit" onclick="handleSubmit(event)">Send Message</button>
+          <button type="submit" class="form-submit">Send Message</button>
           <p class="form-note">We'll get back to you within one business day.</p>
-        </div>
+        </form>
 
         <div class="form-success" id="formSuccess">
           <div class="form-success-icon">✅</div>
@@ -1458,15 +1458,6 @@
   }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
   reveals.forEach(el => observer.observe(el));
 
-  // Form handler
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = document.getElementById('contactForm');
-    const success = document.getElementById('formSuccess');
-    // TODO: Wire to Netlify Forms, Formspree, or EmailJS
-    // See DEPLOYMENT.md for instructions
-    form.style.display = 'none';
-    success.classList.add('visible');
   }
 </script>
 </body>
