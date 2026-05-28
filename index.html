@@ -1381,24 +1381,24 @@
           <div class="form-row">
             <div class="form-field">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Jane" required />
+              <input type="text" id="fname" name="fname" placeholder="Jane" required />
             </div>
             <div class="form-field">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Smith" required />
+              <input type="text" id="lname" name="lname" placeholder="Smith" required />
             </div>
           </div>
           <div class="form-field">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="jane@yourbusiness.com" required />
+            <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
           </div>
           <div class="form-field">
             <label for="biz">What kind of business do you run?</label>
-            <input type="text" id="biz" placeholder="e.g. Roofing company, 15 employees" />
+            <input type="text" id="biz" name="biz" placeholder="e.g. Roofing company, 15 employees" />
           </div>
           <div class="form-field">
             <label for="interest">What are you hoping to get help with?</label>
-            <select id="interest">
+            <select id="interest" name="interest">
               <option value="" disabled selected>Pick the closest thing...</option>
               <option>Setting up better reports or dashboards</option>
               <option>Figuring out why something isn't working</option>
@@ -1411,12 +1411,11 @@
           </div>
           <div class="form-field">
             <label for="message">Anything else you want us to know?</label>
-            <textarea id="message" placeholder="The more context the better — what's frustrating you, what you've already tried, what would success look like..."></textarea>
+            <textarea id="message" name="message" placeholder="The more context the better — what's frustrating you, what you've already tried, what would success look like..."></textarea>
           </div>
           <button type="submit" class="form-submit">Send Message</button>
           <p class="form-note">We'll get back to you within one business day.</p>
         </form>
-
         <div class="form-success" id="formSuccess">
           <div class="form-success-icon">✅</div>
           <h4>Message received.</h4>
